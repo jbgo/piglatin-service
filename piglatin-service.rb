@@ -1,6 +1,9 @@
 require 'sinatra'
 require 'json'
 
+set :bind, '0.0.0.0'
+set :logging, true
+
 VOWELS = %w(a e i o u).join
 CONSONANTS = (('a'..'z').to_a - VOWELS.split('')).join
 
