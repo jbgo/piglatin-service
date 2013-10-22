@@ -5,5 +5,5 @@ add . /apps/piglatin-service
 workdir /apps/piglatin-service
 run gem install bundler
 run bundle install
-expose :5555
-entrypoint ruby piglatin-service.rb -p 5555
+expose 4567
+entrypoint ruby piglatin-service.rb
